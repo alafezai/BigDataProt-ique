@@ -1,0 +1,13 @@
+{
+    "spark": {
+      "appName": "HadoopToSparkApp",
+      "hadoop": {
+        "fs.defaultFS": "hdfs://172.18.0.2:9000",
+        "home.dir": "/usr/local/hadoop"
+      },
+      "memory": {
+        "executor": "4g",
+        "driver": "4g"
+      }
+    }
+  }
