@@ -15,7 +15,7 @@ This project aims to construct a protein graph based on their domain composition
      - `enzyme.dat`: EC (Enzyme Commission) number information.
 
 2. **Data Preprocessing**:
-   - Data is cleaned and transformed to extract relevant information (domains, EC annotations, GO terms).
+   - Data is cleaned and transformed to extract relevant information (domains, EC annotations).
    - Proteins are represented by their domain compositions (sets of InterPro domains).
 
 3. **Graph Construction**:
@@ -24,7 +24,7 @@ This project aims to construct a protein graph based on their domain composition
 
 4. **Protein Annotation**:
    - A **label propagation algorithm** is applied to propagate annotations from annotated proteins to unannotated ones.
-   - Propagated annotations include EC numbers and GO terms.
+   - Propagated annotations include EC numbers.
 
 5. **Storage and Querying**:
    - The protein graph is stored in a graph database (**Neo4j**).
@@ -66,29 +66,22 @@ This project aims to construct a protein graph based on their domain composition
 ## 4. **Implemented Features**
 
 ### 4.1 **Graph Construction**
-- **Input**: Preprocessed data files (domains, EC annotations, GO terms).
+- **Input**: Preprocessed data files (domains, EC annotations).
 - **Output**: Protein graph stored in Neo4j.
 - **Steps**:
   1. Extract domain compositions for each protein.
   2. Compute Jaccard similarities between proteins using LSH.
   3. Create nodes and relationships in Neo4j.
-
-### 4.2 **Protein Annotation**
-- **Input**: Protein graph with annotated and unannotated nodes.
-- **Output**: Unannotated proteins with propagated annotations.
-- **Steps**:
+- **Protein Annotation**
   1. Select unannotated proteins.
   2. Propagate annotations from neighboring proteins.
   3. Assign the most relevant annotations.
 
-### 4.3 **User Interface**
+### 4.2 **Neo4j**
 - **Features**:
   - Search for proteins by ID, name, or description.
   - Visualize proteins and their neighbors.
-  - Display annotations (EC, GO) for each protein.
-- **Technologies**:
-  - **D3.js** for interactive graph visualization.
-  - **Angular** for the user interface.
+  - Display annotations (EC) for each protein.
 
 ---
 
@@ -102,9 +95,6 @@ This project aims to construct a protein graph based on their domain composition
 - **Coverage**: A large number of unannotated proteins received annotations.
 - **Accuracy**: Propagated annotations are consistent with available manual annotations.
 
-### 5.3 **Visualization**
-- **Interactivity**: The user interface allows intuitive exploration of the protein graph.
-- **Clarity**: Annotations and protein relationships are clearly displayed.
 
 ---
 
