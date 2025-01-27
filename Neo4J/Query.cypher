@@ -24,6 +24,12 @@ SET p2.reviewed = $reviewed2,
     p2.num_domains = $num_domains2
 MERGE (p1)-[r:SIMILAR_TO {similarity: $similarity}]->(p2);
 
+
+//Déclarer un paramètre avec :param :
+:param nom_du_parametre => 'valeur'
+
+
+
 // 2. Récupérer toutes les protéines
 // Cette requête retourne toutes les protéines dans la base de données.
 MATCH (p:Protein)
