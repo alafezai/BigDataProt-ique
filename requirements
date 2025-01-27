@@ -1,0 +1,26 @@
+# Requirements for Protein Graph Construction and Annotation Project
+
+# Core Libraries
+pyspark==3.3.1  # For distributed data processing and LSH implementation
+graphframes==0.8.2  # For graph processing with Spark (requires Spark)
+# Data Processing and Analysis
+pandas==2.0.3   # For data manipulation and preprocessing
+numpy==1.24.3   # For numerical computations
+scipy==1.10.1   # For scientific computations and similarity metrics
+
+# Graph Database and Querying
+neo4j==5.11.0   # For storing and querying the protein graph
+py2neo==2021.2.3  # Python driver for Neo4j
+
+# Machine Learning and Annotation
+imbalanced-learn==0.10.1  # For handling imbalanced datasets in annotation
+
+# Visualization
+networkx==3.1   # For graph construction and manipulation
+matplotlib==5.14.1  # For advanced interactive visualizations
+
+# Utilities
+joblib==1.2.0   # For parallel processing and task scheduling
+
+# Testing and Development
+pytest==7.3.1   # For unit testing

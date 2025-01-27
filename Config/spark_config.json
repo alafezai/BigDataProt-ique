@@ -6,8 +6,8 @@
         "home.dir": "/usr/local/hadoop"
       },
       "memory": {
-        "executor": "4g",
-        "driver": "4g"
+        "executor": "8g",
+        "driver": "6g"
       }
     }
   }
