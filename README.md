@@ -49,8 +49,8 @@ The repository contains detailed instructions on how to set up the Hadoop cluste
 
 . **Clonez ce dépôt :**
 ```bash
-   git clone https://github.com/votre-utilisateur/PROJET_PRO.git
-   cd PROJET_PRO
+git clone https://github.com/votre-utilisateur/PROJET_PRO.git
+cd PROJET_PRO
 ```
 
 2. **Install Python dependencies:**
