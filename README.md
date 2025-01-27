@@ -1,6 +1,6 @@
 # PRO Project - Protein Annotation with Spark and Neo4j
 
-This project aims to build a protein graph based on their domain compositions, using **Apache Spark** for distributed data processing and **Neo4j** for graph storage and querying. The goal is to automatically annotate unannotated proteins by propagating annotations from already annotated proteins through the graph.
+This project aims to build a protein graph based on their domain compositions, using **Apache Spark** for distributed data processing and **Neo4j** for graph storage and querying. The goal is to automatically annotate unannotated proteins by propagating annotations from already annotated proteins.
 
 # Project Structure
 
@@ -9,7 +9,8 @@ root/
 PRO_PROJECT/
 ├── config/
 │   └── spark_config.json       
-├── docs/                        
+├── docs/
+│   ├── Architecture.md                           
 ├── hadoop/
 ├── Neo4j/
 │   ├── query.cypher                     
