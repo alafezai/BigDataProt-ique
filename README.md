@@ -50,7 +50,7 @@ The repository contains detailed instructions on how to set up the Hadoop cluste
 
 . **Clonez ce dépôt :**
 ```bash
-git clone https://github.com/votre-utilisateur/PROJET_PRO.git
+git clone https://github.com/alafezai/BigDataProt-ique.git
 cd PROJET_PRO
 ```
 
